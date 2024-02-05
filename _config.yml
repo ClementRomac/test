@@ -1,0 +1,66 @@
+# Site settings
+title: ChatGPT expliqué en 5 minutes
+email: 
+url: 
+description: "La série vidéo « ChatGPT en 5 mn » a été réalisée par Alexandre Torres-Leguet, Clément Romac, Thomas Carta, Pierre-Yves Oudeyer, dans l'équipe Flowers du centre Inria de l'Université de Bordeaux. Elle est distribuée sous licence Creative Commons CC-BY."
+keywords: ""
+meta_author: Flowers Team
+
+# Google webmaster tools
+google_verify:
+
+# https://ssl.bing.com/webmaster/configure/verify/ownership Option 2 content= goes here
+bing_verify:
+
+# If you use disqus you need disqus shortname
+# https://help.disqus.com/customer/portal/articles/466208
+disqus_shortname: myshortname
+
+# Color settings (hex-codes without the leading hash-tag)
+color:
+  primary: E73919 #80B3FF
+  #primary-rgb: "241, 250, 238" #"128,179,255"
+  secondary: 384257 #FD6E8A
+  secondary-dark: 384257 #A2122F
+
+# Footer settings
+footer:
+  copyright: Inria Flowers team
+  location: Location
+  social: Find us
+  credits: Credits
+
+# Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
+social:
+  - title: twitter
+    url: https://twitter.com/FlowersINRIA
+  - title: github
+    url: http://github.com/flowersteams
+
+# Postal address (add as many lines as necessary)
+address:
+  - line: 3481 Melrose Place
+  - line: Beverly Hills, CA 90210
+
+# Credits content
+credits: 'Torres-Leguet, A., Romac, C., Carta, T., Oudeyer, P-Y. (2023) ChatGPT en 5mn: une série pédagogique pour le grand public, CC-BY, https://developmentalsystems.org/chatgpt_en_5_minutes/'
+
+# Build settings
+markdown: kramdown
+permalink: pretty
+
+#for posts
+defaults:
+  - scope:
+      path: "_posts/en"
+      type: "posts"
+    values:
+      permalink: ""
+      lang: "en"
+  - scope:
+      path: "_posts/fr"
+      type: "posts"
+    values:
+      permalink: ""
+      lang: "fr"
+
