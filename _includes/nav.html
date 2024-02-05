@@ -12,9 +12,9 @@
       <a class="navbar-brand" href="#page-top">
         <span class="name">
           {% if page.lang == 'fr' %}
-          ChatGPT expliqué en 5 minutes
+            ChatGPT expliqué en 5 minutes
           {% else if page.lang == 'en' %}
-          ChatGPT explained in 5 minutes
+            ChatGPT explained in 5 minutes
           {% endif %}
         </span>
         <!-- <img class="img-responsive" src="img/profile.png" alt="website's logo" /> -->
@@ -28,10 +28,22 @@
           <a href="#page-top"></a>
         </li>
         <li class="page-scroll">
-          <a href="#portfolio">Videos</a>
+          <a href="#portfolio">
+            {% if page.lang == 'fr' %}
+              Vidéos
+            {% else if page.lang == 'en' %}
+              Videos
+            {% endif %}
+          </a>
         </li>
         <li class="page-scroll">
-          <a href="#about">About</a>
+          <a href="#about">
+            {% if page.lang == 'fr' %}
+              A propos
+            {% else if page.lang == 'en' %}
+              About
+            {% endif %}
+          </a>
         </li>
         <li class="page-scroll">
           
