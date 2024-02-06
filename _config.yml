@@ -26,9 +26,6 @@ color:
 # Footer settings
 footer:
   copyright: Inria Flowers team
-  location: Location
-  social: Find us
-  credits: Credits
 
 # Social networks usernames (many more available: google-plus, flickr, dribbble, pinterest, instagram, tumblr, linkedin, etc.)
 social:
