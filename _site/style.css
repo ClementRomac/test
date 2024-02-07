@@ -161,6 +161,12 @@ header .intro-text .skills {
     }
 }
 
+@media(max-width:468px) {
+    .navbar-fixed-top .navbar-brand {
+        font-size: 1em;
+    }
+}
+
 .navbar {
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
@@ -224,8 +230,10 @@ section.success {
 }
 
 .portfolio-item .download-section {
-    margin: 10px 0 0 0; 
+    margin: 10px auto 0 auto; 
     text-align: center;
+    position: relative;
+    max-width: 400px;
 }
 
 .portfolio-item .download-section div {

@@ -3,13 +3,7 @@
   <div class="container portfolio-flex-grid">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2>
-          {% if page.lang == 'fr' %}
-              Vidéos
-          {% else if page.lang == 'en' %}
-             Videos
-          {% endif %}
-        </h2>
+        <h2>{{ site.texts.videos-section.title[page.lang] }}</h2>
         <hr class="star-light">
       </div>
     </div>
@@ -43,12 +37,6 @@
       {% endif %}
       {% endfor %}
     </div>
-    <p class="cc-by-explanation"><i>*
-      {% if page.lang == 'fr' %}
-        Ces vidéos sont libres de droits, avec une licence Creative Commons CC-BY. Cela veut dire qu'elles peuvent être utilisées librement, à la condition que leur source soit citée (voir Crédits).
-      {% else if page.lang == 'en' %}
-        These videos are royalty-free, with a Creative Commons CC-BY license. This means that they can be used freely, provided that their source is cited (see Credits).
-      {% endif %}
-    </i></p>
+    <p class="cc-by-explanation"><i>*{{ site.texts.videos-section.cc-by-explanation[page.lang] }}</i></p>
   </div>
 </section>

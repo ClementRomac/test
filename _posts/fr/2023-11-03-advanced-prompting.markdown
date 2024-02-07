@@ -2,7 +2,7 @@
 layout: default
 modal-id: 5
 date: 2023-11-03
-img: miniature_raisonnement.png
+img: fr/miniature_raisonnement.png
 alt: thumbnail
 project-date: Novembre 2023
 link: https://www.youtube.com/watch?v=uLMqTPmvqPw

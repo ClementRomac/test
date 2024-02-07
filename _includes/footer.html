@@ -4,13 +4,7 @@
     <div class="container">
       <div class="row">
         <div class="footer-col col-md-6">
-          <h3>
-            {% if page.lang == 'fr' %}
-              Nous retrouver
-            {% else if page.lang == 'en' %}
-              Find us
-            {% endif %}
-          </h3>
+          <h3>{{ site.texts.footer.socials[page.lang] }}</h3>
           <ul class="list-inline">
             {% for network in site.social %}
             <li>
@@ -21,14 +15,8 @@
           </ul>
         </div>
         <div class="footer-col col-md-6">
-          <h3>
-            {% if page.lang == 'fr' %}
-              Crédits
-            {% else if page.lang == 'en' %}
-              Credits
-            {% endif %}
-          </h3>
-          <p id="credits"><i>{{ site.credits }}</i></p>
+          <h3>{{ site.texts.footer.credits.title[page.lang] }}</h3>
+          <p id="credits"><i>{{ site.texts.footer.credits.credits[page.lang] }}</i></p>
         </div>
       </div>
     </div>

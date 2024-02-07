@@ -2,7 +2,7 @@
 layout: default
 modal-id: 3
 date: 2023-03-18
-img: miniature_prompting.png
+img: fr/miniature_prompting.png
 alt: thumbnail
 project-date: Mars 2023
 link: https://www.youtube.com/watch?v=8IQ9i_QoA3A

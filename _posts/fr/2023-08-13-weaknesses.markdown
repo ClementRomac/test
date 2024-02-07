@@ -2,7 +2,7 @@
 layout: default
 modal-id: 2
 date: 2023-03-13
-img: miniature_faiblesses.png
+img: fr/miniature_faiblesses.png
 alt: thumbnail
 project-date: Mars 2023
 link: https://www.youtube.com/watch?v=xXHWTC4mJBM

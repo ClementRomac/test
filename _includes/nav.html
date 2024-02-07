@@ -10,13 +10,7 @@
         <span class="icon-bar"></span>
       </button>
       <a class="navbar-brand" href="#page-top">
-        <span class="name">
-          {% if page.lang == 'fr' %}
-            ChatGPT expliqué en 5 minutes
-          {% else if page.lang == 'en' %}
-            ChatGPT explained in 5 minutes
-          {% endif %}
-        </span>
+        <span class="name">{{ site.texts.nav.title[page.lang] }}</span>
         <!-- <img class="img-responsive" src="img/profile.png" alt="website's logo" /> -->
       </a>
     </div>
@@ -28,22 +22,10 @@
           <a href="#page-top"></a>
         </li>
         <li class="page-scroll">
-          <a href="#portfolio">
-            {% if page.lang == 'fr' %}
-              Vidéos
-            {% else if page.lang == 'en' %}
-              Videos
-            {% endif %}
-          </a>
+          <a href="#portfolio">{{ site.texts.nav.videos[page.lang] }}</a>
         </li>
         <li class="page-scroll">
-          <a href="#about">
-            {% if page.lang == 'fr' %}
-              A propos
-            {% else if page.lang == 'en' %}
-              About
-            {% endif %}
-          </a>
+          <a href="#about">{{ site.texts.nav.about[page.lang] }}</a>
         </li>
         <li class="page-scroll">
           

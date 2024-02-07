@@ -3,29 +3,12 @@
   <div class="container">
     <div class="row">
       <div class="col-lg-12 text-center">
-        <h2>
-          {% if page.lang == 'fr' %}
-            A propos
-          {% else if page.lang == 'en' %}
-            About
-          {% endif %}
-        </h2>
+        <h2>{{ site.texts.about-section.title[page.lang] }}</h2>
         <hr class="star-light">
       </div>
     </div>
     <div class="row">
-      <p>
-        {% if page.lang == 'fr' %}
-          Spécialisée dans l’Intelligence Artificielle développementale, l’équipe Flowers étudie notamment les récents gros modèles de langage (ChatGPT, Bard...). Constatant que la grande majorité des ressources éducatives sur ces modèles adoptait un format long et destiné à un public relativement averti, ce projet de vidéos au format court destiné à un public large (par exemple élèves et enseignants de collèges et lycées, et plus généralement aux non spécialistes de l'informatique ou de l'IA) est né.
-          <br/><br/>
-          Nous vous proposons donc de <strong>démystifier</strong> ces récents outils au travers de plusieurs vidéos courtes (la série est toujours en cours de construction et de nouvelles vidéos sont à venir).
-        {% else if page.lang == 'en' %}
-          Specializing in developmental Artificial Intelligence, the Flowers team studies recent large language models (ChatGPT, Bard, etc.). Noting that the vast majority of educational resources on these models adopted a long format and intended for a relatively informed audience, this project of short format videos intended for a wide audience (for example middle and high school students and teachers, and more generally for not specialists in IT or AI) was born.
-          <br/><br/>
-          We therefore invite you to <strong>demystify</strong> these recent tools through several short videos (the series is still under construction and new videos are to come).
-        {% endif %}
-        
-      </p>
+      <p class="col-lg-12">{{ site.texts.about-section.text[page.lang] }}</p>
     </div>
   </div>
 </section>

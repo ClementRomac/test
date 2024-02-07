@@ -7,36 +7,39 @@
         <div class="intro-text">
           <!-- <span class="name">{{ site.title }}</span> -->
           <!-- <hr class="star-light" /> -->
-          <p>
-            {% if page.lang == 'fr' %}
-              Dans cette série de vidéos destinée au grand public, <strong>l’équipe de recherche </strong> 
-              <a href="https://flowers.inria.fr/" target="_blank"><strong >Flowers du centre Inria de l'Université de Bordeaux</strong></a>
-              vous propose de mieux comprendre <strong>comment fonctionnent les modèles de langage comme ChatGPT en 5 minutes</strong>.
-            {% else if page.lang == 'en' %}
-              In this series of videos intended for the general public,
-              <a href="https://flowers.inria.fr/" target="_blank"><strong >the Flowers research team from the Inria center at the University of Bordeaux</strong></a>
-              offers you a better understanding of <strong>how language models like ChatGPT work in 5 minutes</strong>.
-            {% endif %}
-          </p>
+          <p>{{ site.texts.header[page.lang] }}</p>
         </div>
       </div>
-      <div class="col-lg-6 portfolio-item">
-        {% assign mainposts = site.posts | where: 'modal-id', 1 %}
-        {% for post in mainposts %}
-        {% if post.lang == page.lang %}
-         <a href="#portfolioModal-1" class="portfolio-link" data-toggle="modal">
-          <div class="caption">
-            <div class="caption-content">
-              <i class="fa fa-search-plus fa-3x"></i>
+      <div class="col-lg-6">
+        <div class="portfolio-item">
+          {% assign mainposts = site.posts | where: 'modal-id', 1 %}
+          {% for post in mainposts %}
+          {% if post.lang == page.lang %}
+          <a href="#portfolioModal-1" class="portfolio-link" data-toggle="modal">
+            <div class="caption">
+              <div class="caption-content">
+                <i class="fa fa-search-plus fa-3x"></i>
+              </div>
             </div>
+            <img src="{{ site.url }}/img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
+          </a>
+          <div class="row download-section">
+            <div class="col-lg-6 cc-by">
+              <img src="{{ site.url }}/img/ccby.png" loading="lazy" width="77"/>*
+            </div>
+            <div class="col-lg-6">
+              Download:
+                  <a href="{{ post.download-link }}" download class="download">
+                    <i class="fa-solid fa-fw fa-download"></i>
+                </a>
+              </div>
           </div>
-          <img src="{{ site.url }}/img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
-        </a>
-        <p>
-          {{ post.short-desc }}
-        </p>
-        {% endif %}
-        {% endfor %}
+          <p>
+            {{ post.short-desc }}
+          </p>
+          {% endif %}
+          {% endfor %}
+        </div>
       </div>
     </div>
   </div>
