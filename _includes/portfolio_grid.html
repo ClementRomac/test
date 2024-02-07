@@ -25,6 +25,17 @@
           </div>
           <img src="{{ site.url }}/img/portfolio/{{ post.img }}" class="img-responsive" alt="{{ post.alt }}">
         </a>
+        <div class="row download-section">
+          <div class="col-lg-6 cc-by">
+            <img src="{{ site.url }}/img/ccby.png" loading="lazy" width="77"/>*
+          </div>
+          <div class="col-lg-6">
+            Download:
+                <a href="{{ post.download-link }}" download class="download">
+                  <i class="fa-solid fa-fw fa-download"></i>
+              </a>
+            </div>
+        </div>
         <p>
           {{ post.short-desc }}
         </p>
@@ -32,5 +43,12 @@
       {% endif %}
       {% endfor %}
     </div>
+    <p class="cc-by-explanation"><i>*
+      {% if page.lang == 'fr' %}
+        Ces vidéos sont libres de droits, avec une licence Creative Commons CC-BY. Cela veut dire qu'elles peuvent être utilisées librement, à la condition que leur source soit citée (voir Crédits).
+      {% else if page.lang == 'en' %}
+        These videos are royalty-free, with a Creative Commons CC-BY license. This means that they can be used freely, provided that their source is cited (see Credits).
+      {% endif %}
+    </i></p>
   </div>
 </section>
